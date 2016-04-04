@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="22" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="367" started-at="2016-04-04T15:51:25Z" finished-at="2016-04-04T15:51:25Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="367" started-at="2016-04-04T15:51:25Z" finished-at="2016-04-04T15:51:25Z">
+      <class name="com.epam.CandyTest">
+        <test-method status="PASS" signature="whenCreateCandyWithQuatityThenSuccess()[pri:0, instance:com.epam.CandyTest@58ceff1]" name="whenCreateCandyWithQuatityThenSuccess" duration-ms="9" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenCreateCandyWithQuatityThenSuccess -->
+        <test-method status="PASS" signature="whenCreateCandyWithoutDataThenSuccess()[pri:0, instance:com.epam.CandyTest@58ceff1]" name="whenCreateCandyWithoutDataThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenCreateCandyWithoutDataThenSuccess -->
+      </class> <!-- com.epam.CandyTest -->
+      <class name="com.epam.ChocolateTest">
+        <test-method status="PASS" signature="whenCreateChocolateWithQualityThenSuccess()[pri:0, instance:com.epam.ChocolateTest@39ba5a14]" name="whenCreateChocolateWithQualityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenCreateChocolateWithQualityThenSuccess -->
+        <test-method status="PASS" signature="whenCreateChocolateWithoutDataThenSuccess()[pri:0, instance:com.epam.ChocolateTest@39ba5a14]" name="whenCreateChocolateWithoutDataThenSuccess" duration-ms="3" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenCreateChocolateWithoutDataThenSuccess -->
+      </class> <!-- com.epam.ChocolateTest -->
+      <class name="com.epam.OrderTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenAddNewItemThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenAddNewItemThenSuccess" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenAddNewItemThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenClearThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenClearThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenClearThenSuccess -->
+        <test-method status="PASS" signature="whenDeleteNotExistingItemsQuantityThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenDeleteNotExistingItemsQuantityThenException" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No item with that ID exist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No item with that ID exist
+	at com.epam.Order.deleteItem(Order.java:37)
+	at com.epam.OrderTest.whenDeleteNotExistingItemsQuantityThenException(OrderTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenDeleteNotExistingItemsQuantityThenException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenDeleteNotExistingItemsQuantityThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenDeleteNotExistingItemsQuantityThenException" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No item with that ID exist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No item with that ID exist
+	at com.epam.Order.deleteItem(Order.java:37)
+	at com.epam.OrderTest.whenDeleteNotExistingItemsQuantityThenException(OrderTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenDeleteNotExistingItemsQuantityThenException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenEqualsVerifierThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenEqualsVerifierThenSuccess" duration-ms="333" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenEqualsVerifierThenSuccess -->
+        <test-method status="PASS" signature="whenDeleteThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenDeleteThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenDeleteThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenGetAveragePriceThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenGetAveragePriceThenSuccess" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenGetAveragePriceThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenGetTotalPriceThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenGetTotalPriceThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenGetTotalPriceThenSuccess -->
+        <test-method status="PASS" signature="whenGetTotalQuantityThenSuccess()[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenGetTotalQuantityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenGetTotalQuantityThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenModifyQuantityThenSuccess(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyQuantityThenSuccess" duration-ms="1" started-at="2016-04-04T17:51:25Z" data-provider="modifyQuantity" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyQuantityThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenModifyNotExistingThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyNotExistingThenException" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No item with that ID exist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No item with that ID exist
+	at com.epam.Order.modifyQuantity(Order.java:28)
+	at com.epam.OrderTest.whenModifyNotExistingThenException(OrderTest.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyNotExistingThenException -->
+        <test-method status="PASS" signature="whenModifyNotExistingThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyNotExistingThenException" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No item with that ID exist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No item with that ID exist
+	at com.epam.Order.modifyQuantity(Order.java:28)
+	at com.epam.OrderTest.whenModifyNotExistingThenException(OrderTest.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyNotExistingThenException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenModifyQuantityThenSuccess(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyQuantityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="modifyQuantity" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyQuantityThenSuccess -->
+        <test-method status="PASS" signature="whenModifyQuantityThenSuccess(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyQuantityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="modifyQuantity" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyQuantityThenSuccess -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="1" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenModifyQuantityThenSuccess(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyQuantityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="modifyQuantity" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyQuantityThenSuccess -->
+        <test-method status="PASS" signature="whenModifyQuantityThenSuccess(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyQuantityThenSuccess" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="modifyQuantity" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyQuantityThenSuccess -->
+        <test-method status="PASS" signature="whenModifyToNegativeQuantityThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyToNegativeQuantityThenException" duration-ms="1" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Quantity should be positive number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Quantity should be positive number
+	at com.epam.Order.modifyQuantity(Order.java:25)
+	at com.epam.OrderTest.whenModifyToNegativeQuantityThenException(OrderTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyToNegativeQuantityThenException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="whenModifyToNegativeQuantityThenException(int)[pri:0, instance:com.epam.OrderTest@57829d67]" name="whenModifyToNegativeQuantityThenException" duration-ms="0" started-at="2016-04-04T17:51:25Z" data-provider="negative" finished-at="2016-04-04T17:51:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Quantity should be positive number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Quantity should be positive number
+	at com.epam.Order.modifyQuantity(Order.java:25)
+	at com.epam.OrderTest.whenModifyToNegativeQuantityThenException(OrderTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenModifyToNegativeQuantityThenException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.OrderTest@57829d67]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-04T17:51:25Z" finished-at="2016-04-04T17:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.epam.OrderTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

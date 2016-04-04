@@ -1,5 +1,6 @@
 package com.epam;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.testng.Assert;
@@ -8,16 +9,18 @@ import org.testng.annotations.Test;
 /**
  * Created by Schneidhoffer Tunde on 2016.04.01..
  */
-public class CandyTest {
+public final class CandyTest {
 
 
     public static final String CANDY_NAME = "Candy Name";
     public static final int PRICE = 160;
     public static final int QUANTITY = 2;
     public static final Candy.Taste TASTE = Candy.Taste.HONEY;
+    public static final String CLASSIC_CANDY = "Classic candy";
+    public static final int CLASSIC_CANDY_PRICE = 190;
 
     @Test
-    public void whenCreateCandyThenSuccess() {
+    public void whenCreateCandyWithQuatityThenSuccess() {
         //Given
         //When
         final Candy actual = new Candy(CANDY_NAME, PRICE, QUANTITY, TASTE);
@@ -26,6 +29,26 @@ public class CandyTest {
         Assert.assertEquals(actual.getPrice(), PRICE, "Price: ");
         Assert.assertEquals(actual.getQuantity(), QUANTITY, "Quantity: ");
         MatcherAssert.assertThat("Taste: ", actual.getSpecialParameter(), Is.is(TASTE.name()));
+    }
+
+    @Test
+    public void whenCreateCandyWithoutDataThenSuccess() {
+        //Given
+        //When
+        final Candy actual = new Candy(TASTE);
+        //Then
+        Assert.assertEquals(actual.getName(), CLASSIC_CANDY, "Name: ");
+        Assert.assertEquals(actual.getPrice(), CLASSIC_CANDY_PRICE, "Price: ");
+        MatcherAssert.assertThat("Taste: ", actual.getSpecialParameter(), Is.is(TASTE.name()));
+    }
+
+    @Test(enabled = false)
+    public void whenEqualsVerifierThenSuccess() {
+        //Given
+        final Candy candy = new Candy(TASTE);
+        //When
+        candy.toString();
+        EqualsVerifier.forClass(Candy.class).verify();
     }
 
 }

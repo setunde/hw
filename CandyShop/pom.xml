@@ -24,9 +24,67 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
-            <version>3.2</version>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <version>2.0.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.1.4</version>
+                <configuration>
+                    <targetClasses>
+                        <param>com.epam*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>com.epam*</param>
+                    </targetTests>
+                    <mutators>
+                        <mutator>CONSTRUCTOR_CALLS</mutator>
+                        <mutator>NON_VOID_METHOD_CALLS</mutator>
+                        <mutator>CONDITIONALS_BOUNDARY</mutator>
+                        <mutator>NEGATE_CONDITIONALS</mutator>
+                        <mutator>REMOVE_CONDITIONALS</mutator>
+                        <mutator>MATH</mutator>
+                        <mutator>INVERT_NEGS</mutator>
+                        <mutator>RETURN_VALS</mutator>
+                        <mutator>VOID_METHOD_CALLS</mutator>
+                        <mutator>NON_VOID_METHOD_CALLS</mutator>
+                        <mutator>CONSTRUCTOR_CALLS</mutator>
+                    </mutators>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.1.4</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 
 </project>

@@ -1,16 +1,19 @@
 package com.epam;
 
+import jdk.nashorn.internal.ir.annotations.Immutable;
+
+@Immutable
 public abstract class Gifts {
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
     private int quantity = 1;
 
-    public Gifts(String name, int price) {
+    public Gifts(final String name, final int price) {
         this.name = name;
         this.price = price;
     }
 
-    public Gifts(String name, int price,int quantity) {
+    public Gifts(final String name, final int price, final int quantity) {
         this(name,price);
         this.quantity = quantity;
 
@@ -22,16 +25,8 @@ public abstract class Gifts {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getPrice() {
         return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public int getQuantity() {
@@ -41,4 +36,6 @@ public abstract class Gifts {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+
 }
