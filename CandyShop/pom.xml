@@ -42,6 +42,28 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/resources/testng-maven.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
+                    <properties>
+                        <property>
+                            <name>parallel</name>
+                            <value>methods</value>
+                        </property>
+                        <property>
+                            <name>dataproviderthreadcount</name>
+                            <value>2</value>
+                        </property>
+                    </properties>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>1.1.4</version>
@@ -52,6 +74,8 @@
                     <targetTests>
                         <param>com.epam*</param>
                     </targetTests>
+                    <includedGroups>smoke</includedGroups>
+                    <includedGroups>trivial</includedGroups>
                     <mutators>
                         <mutator>CONSTRUCTOR_CALLS</mutator>
                         <mutator>NON_VOID_METHOD_CALLS</mutator>

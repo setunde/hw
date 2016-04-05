@@ -19,7 +19,7 @@ public class ChocolateTest {
     public static final String CLASSIC_CANDY = "Milk Chocolate";
     public static final int CLASSIC_CANDY_PRICE = 210;
 
-    @Test
+    @Test(groups = "smoke")
     public void whenCreateChocolateWithQualityThenSuccess() {
         //Given
         //When
@@ -31,7 +31,7 @@ public class ChocolateTest {
         MatcherAssert.assertThat("Taste: ", actual.getSpecialParameter(), Is.is(TASTE.name()));
     }
 
-    @Test
+    @Test(groups = "trivial")
     public void whenCreateChocolateWithoutDataThenSuccess() {
         //Given
         //When
@@ -41,7 +41,7 @@ public class ChocolateTest {
         Assert.assertEquals(actual.getPrice(), CLASSIC_CANDY_PRICE, "Price: ");
     }
 
-    @Test(enabled = false)
+    @Test(groups = "equalsVerifier")
     public void whenEqualsVerifierThenSuccess() {
         //Given
         final Chocolate chocolate = new Chocolate();

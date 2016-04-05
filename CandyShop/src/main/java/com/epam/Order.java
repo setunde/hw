@@ -4,7 +4,7 @@ import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.ArrayList;
 
-public final class Order {
+public class Order {
     final ArrayList<Gifts> itemList = new ArrayList<Gifts>();
 
     public ArrayList<Gifts> getItemList() {

@@ -19,8 +19,8 @@ public final class CandyTest {
     public static final String CLASSIC_CANDY = "Classic candy";
     public static final int CLASSIC_CANDY_PRICE = 190;
 
-    @Test
-    public void whenCreateCandyWithQuatityThenSuccess() {
+    @Test(groups = "smoke")
+    public void whenCreateCandyWithQuantityThenSuccess() {
         //Given
         //When
         final Candy actual = new Candy(CANDY_NAME, PRICE, QUANTITY, TASTE);
@@ -31,7 +31,7 @@ public final class CandyTest {
         MatcherAssert.assertThat("Taste: ", actual.getSpecialParameter(), Is.is(TASTE.name()));
     }
 
-    @Test
+    @Test(groups = "trivial")
     public void whenCreateCandyWithoutDataThenSuccess() {
         //Given
         //When
@@ -42,7 +42,7 @@ public final class CandyTest {
         MatcherAssert.assertThat("Taste: ", actual.getSpecialParameter(), Is.is(TASTE.name()));
     }
 
-    @Test(enabled = false)
+    @Test(groups = "equalsVerifier")
     public void whenEqualsVerifierThenSuccess() {
         //Given
         final Candy candy = new Candy(TASTE);

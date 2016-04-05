@@ -5,6 +5,7 @@ import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.mockito.Mockito;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -32,13 +33,19 @@ public class OrderTest {
     private final static Chocolate GIFT4 = new Chocolate(NAME, PRICE, NEW_QUANTITY, DARK);
     private final Order order = new Order();
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         //Given
         order.clear();
     }
 
-    @Test
+    @AfterMethod(alwaysRun = true)
+    public void afterMethod() {
+        System.out.println("Test has been run.");
+        order.clear();
+    }
+
+    @Test(groups = "trivial")
     public void whenAddNewItemThenSuccess() {
         //Given
         final Candy expectedGift = new Candy(GIFT1.getName(), GIFT1.getPrice(), NEW_QUANTITY, HONEY);
@@ -55,7 +62,7 @@ public class OrderTest {
         return new Object[][]{{NEW_QUANTITY}, {CHANGE_QUANTITY}, {123}, {12}, {Integer.MAX_VALUE}};
     }
 
-    @Test(dataProvider = "modifyQuantity")
+    @Test(dataProvider = "modifyQuantity", groups = "smoke")
     public void whenModifyQuantityThenSuccess(final int changeQuantity) {
         //Given
         final Candy expectedGift = new Candy(GIFT1.getName(), GIFT1.getPrice(), changeQuantity, HONEY);
@@ -68,7 +75,7 @@ public class OrderTest {
         MatcherAssert.assertThat("New Gift: ", order.getItemList(), Is.is(expected));
     }
 
-    @Test
+    @Test(groups = "trivial")
     public void whenDeleteThenSuccess() {
         //Given
         final Candy expectedGift = new Candy(GIFT1.getName(), GIFT1.getPrice(), NEW_QUANTITY, HONEY);
@@ -82,7 +89,7 @@ public class OrderTest {
         MatcherAssert.assertThat("New Gift: ", order.getItemList(), Is.is(expected));
     }
 
-    @Test
+    @Test(groups = "trivial")
     public void whenGetTotalQuantityThenSuccess() {
         //Given
         final int expected = NEW_QUANTITY + GIFT2.getQuantity() + GIFT3.getQuantity() + GIFT4.getQuantity();
@@ -96,7 +103,7 @@ public class OrderTest {
         Assert.assertEquals(actual, expected, "Total Quantity: ");
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void whenGetTotalPriceThenSuccess() {
         //Given
         final int expected = GIFT1.getPrice() * NEW_QUANTITY + GIFT2.getPrice() * GIFT2.getQuantity() + GIFT3.getPrice() * GIFT3.getQuantity() + GIFT4.getPrice() * GIFT4.getQuantity();
@@ -110,7 +117,7 @@ public class OrderTest {
         Assert.assertEquals(actual, expected, "Total Price: ");
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void whenGetAveragePriceThenSuccess() {
         //Given
         final int expected = (GIFT1.getPrice() + GIFT2.getPrice() + GIFT3.getPrice() + GIFT4.getPrice()) / 4;
@@ -124,7 +131,7 @@ public class OrderTest {
         Assert.assertEquals(actual, expected, "Total Price: ");
     }
 
-    @Test
+    @Test(groups = "trivial")
     public void whenClearThenSuccess() {
         //Given
         final ArrayList<Gifts> expected = new ArrayList<Gifts>();
@@ -143,19 +150,19 @@ public class OrderTest {
         return new Object[][]{{-1}, {0}};
     }
 
-    @Test(dataProvider = "negative", expectedExceptions = IllegalArgumentException.class)
+    @Test(dataProvider = "negative", expectedExceptions = IllegalArgumentException.class, groups = {"negative", "smoke"})
     public void whenDeleteNotExistingItemsQuantityThenException(final int id) {
         //When
         order.deleteItem(id);
     }
 
-    @Test(dataProvider = "negative", expectedExceptions = IllegalArgumentException.class)
+    @Test(dataProvider = "negative", expectedExceptions = IllegalArgumentException.class, groups = {"negative", "smoke"})
     public void whenModifyNotExistingThenException(final int id) {
         //When
         order.modifyQuantity(id, 2);
     }
 
-    @Test(dataProvider = "negative", expectedExceptions = NumberFormatException.class)
+    @Test(dataProvider = "negative", expectedExceptions = NumberFormatException.class, groups = {"negative", "smoke"})
     public void whenModifyToNegativeQuantityThenException(final int quantity) {
         //Given
         order.addItem(GIFT1, NEW_QUANTITY);
@@ -163,23 +170,23 @@ public class OrderTest {
         order.modifyQuantity(0, quantity);
     }
 
-    @Test(enabled = false)
+    @Test(groups = "mock")
     public void whenMockGetTotalPriceThenSuccess() {
         //Given
         final int TOTAL = 1000;
-        final Order mockOrder = Mockito.mock(Order.class);
+        Order mockOrder = Mockito.mock(Order.class);
         Mockito.when(mockOrder.getTotalPrice()).thenReturn(TOTAL);
         //When
-        final int actual = mockOrder.getTotalQuantity();
+        final int actual = mockOrder.getTotalPrice();
         //Then
         Assert.assertEquals(actual, TOTAL);
     }
 
-    @Test(enabled = false)
+    @Test(groups = "mock")
     public void whenMockGetTotalQuantityThenSuccess() {
         //Given
         final int TOTAL = 1000;
-        final Order mockOrder = Mockito.mock(Order.class);
+        Order mockOrder = Mockito.mock(Order.class);
         Mockito.when(mockOrder.getTotalQuantity()).thenReturn(TOTAL);
         //When
         final int actual = mockOrder.getTotalQuantity();
@@ -187,7 +194,7 @@ public class OrderTest {
         Assert.assertEquals(actual, TOTAL);
     }
 
-    @Test
+    @Test(groups = "equalsVerifier")
     public void whenEqualsVerifierThenSuccess() {
         EqualsVerifier.forClass(Order.class).verify();
         order.toString();
