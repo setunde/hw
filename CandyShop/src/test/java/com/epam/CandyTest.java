@@ -1,6 +1,7 @@
 package com.epam;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.Warning;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.testng.Assert;
@@ -48,7 +49,7 @@ public final class CandyTest {
         final Candy candy = new Candy(TASTE);
         //When
         candy.toString();
-        EqualsVerifier.forClass(Candy.class).verify();
+        EqualsVerifier.forClass(Candy.class).suppress(Warning.NONFINAL_FIELDS).verify();
     }
 
 }

@@ -1,6 +1,7 @@
 package com.epam;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.Warning;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Schneidhoffer Tunde on 2016.04.01..
  */
-public class ChocolateTest {
+public final class ChocolateTest {
 
 
     public static final String CANDY_NAME = "Chocolate Name";
@@ -47,7 +48,7 @@ public class ChocolateTest {
         final Chocolate chocolate = new Chocolate();
         //When
         chocolate.toString();
-        EqualsVerifier.forClass(Chocolate.class).verify();
+        EqualsVerifier.forClass(Chocolate.class).suppress(Warning.NONFINAL_FIELDS).verify();
     }
 
 }

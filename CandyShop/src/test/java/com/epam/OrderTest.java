@@ -1,6 +1,7 @@
 package com.epam;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.Warning;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.mockito.Mockito;
@@ -196,7 +197,7 @@ public class OrderTest {
 
     @Test(groups = "equalsVerifier")
     public void whenEqualsVerifierThenSuccess() {
-        EqualsVerifier.forClass(Order.class).verify();
+        EqualsVerifier.forClass(Order.class).withRedefinedSubclass(Order.class).verify();
         order.toString();
     }
 
