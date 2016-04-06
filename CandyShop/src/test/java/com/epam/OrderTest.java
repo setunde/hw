@@ -197,7 +197,7 @@ public class OrderTest {
 
     @Test(groups = "equalsVerifier")
     public void whenEqualsVerifierThenSuccess() {
-        EqualsVerifier.forClass(Order.class).withRedefinedSubclass(Order.class).verify();
+        EqualsVerifier.forClass(Order.class).suppress(Warning.NONFINAL_FIELDS).verify();
         order.toString();
     }
 

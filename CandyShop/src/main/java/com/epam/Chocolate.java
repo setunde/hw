@@ -1,6 +1,6 @@
 package com.epam;
 
-public class Chocolate extends Gifts {
+public final class Chocolate extends Gifts {
     public enum ChocolateType {DARK, MILK, WHITE};
     private ChocolateType type = ChocolateType.MILK;
 

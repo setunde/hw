@@ -7,7 +7,7 @@
                 <include name="trivial"/>
                 <include name="smoke"/>
                 <include name="mock"/>
-                <include name="equalsVerifier"/>
+                <!--<include name="equalsVerifier"/>-->
             </run>
         </groups>
         <classes>

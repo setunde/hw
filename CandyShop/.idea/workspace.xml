@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/w1$OrderTest.coverage" NAME="OrderTest Coverage Results" MODIFIED="1459782187789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/w1$C__Users_tmp_tunde_hw_CandyShop_src_resources_testng_scenario_xml.coverage" NAME="$PROJECT_DIR$/src/resources/testng-scenario.xml Coverage Results" MODIFIED="1459925758270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/w1$C__Users_tmp_tunde_hw_CandyShop_src_resources_testng_scenario_xml.coverage" NAME="$PROJECT_DIR$/src/resources/testng-scenario.xml Coverage Results" MODIFIED="1459927784705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/w1$com_epam.coverage" NAME="com.epam Coverage Results" MODIFIED="1459839945164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.*</FILTER>
     </SUITE>
@@ -36,13 +36,15 @@
     <favorites_list name="w1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CandyTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/CandyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
+            <state relative-caret-position="782">
               <caret line="51" column="78" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="78" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,18 +52,28 @@
       <file leaf-file-name="ChocolateTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/ChocolateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="313">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng-scenario.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/testng-scenario.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="181" column="14" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2035#2042#0" expanded="true" />
@@ -73,11 +85,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Candy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Candy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gifts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Gifts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chocolate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Chocolate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-129">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="455">
+              <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -97,17 +139,17 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/ChoclateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/Choclate.java" />
         <option value="$MAVEN_REPOSITORY$/nl/jqno/equalsverifier/equalsverifier/2.0.2/equalsverifier-2.0.2.jar!/nl/jqno/equalsverifier/AbstractDelegationChecker.class" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/Gifts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/Candy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/Chocolate.java" />
         <option value="$PROJECT_DIR$/src/resources/testng-negative.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/resources/testng-maven.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/CandyTest.java" />
-        <option value="$PROJECT_DIR$/src/resources/testng-scenario.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/ChocolateTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/Order.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/Candy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/Chocolate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/Gifts.java" />
+        <option value="$PROJECT_DIR$/src/resources/testng-scenario.xml" />
       </list>
     </option>
   </component>
@@ -155,7 +197,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,6 +287,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -695,29 +737,29 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 44m 45s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 19m 10s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 45m 39s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 20m 41s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 45m 57s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 21m 22s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 46m 12s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 21m 49s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 47m 08s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 22m 08s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 55m 15s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 22m 44s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 08h 56m 01s.xml">
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 24m 49s.xml">
       <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="com_epam - 2016.04.05 at 09h 15m 46s.xml">
-      <configuration name="com.epam" configurationId="TestNG" />
+    <history-entry file="C__Users_tmp_tunde_hw_CandyShop_src_resources_testng-scenario_xml - 2016.04.06 at 09h 28m 25s.xml">
+      <configuration name="C:/Users/tmp/tunde/hw/CandyShop/src/resources/testng-scenario.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="com_epam - 2016.04.05 at 09h 16m 02s.xml">
       <configuration name="com.epam" configurationId="TestNG" />
@@ -728,7 +770,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -739,7 +781,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44556677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -784,6 +826,46 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/CandyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="51" column="78" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/ChocolateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2035#2042#0" expanded="true" />
+            <element signature="e#2756#2763#0" expanded="true" />
+            <element signature="e#3264#3271#0" expanded="true" />
+            <element signature="e#5232#5239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2822">
@@ -810,7 +892,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -844,30 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Gifts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Candy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Chocolate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/testng-maven.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -884,42 +944,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/testng-scenario.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/ChocolateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/CandyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
+        <state relative-caret-position="782">
           <caret line="51" column="78" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        <state relative-caret-position="370">
+          <caret line="181" column="14" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2035#2042#0" expanded="true" />
@@ -927,6 +965,54 @@
             <element signature="e#3264#3271#0" expanded="true" />
             <element signature="e#5232#5239#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Candy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Chocolate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Gifts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/ChocolateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/testng-scenario.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 package com.epam;
 
-public class Candy extends Gifts {
+public final class Candy extends Gifts {
     public enum Taste {HONEY, MENTHOL, CLASSIC};
     private final Taste taste;
 

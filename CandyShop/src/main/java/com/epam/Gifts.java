@@ -37,5 +37,4 @@ public abstract class Gifts {
         this.quantity = quantity;
     }
 
-
 }
